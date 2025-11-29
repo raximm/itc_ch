@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Starly by ITC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <span class="logo-icon">⭐</span>
+          <div class="logo-text">
+            <span class="logo-starly">Starly</span>
+            <span class="logo-by-itc">by ITC</span>
+          </div>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item active">
+          <span class="nav-item-icon">🏠</span>
+          <span>Home</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-item-icon">👥</span>
+          <span>Teams</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-item-icon">📅</span>
+          <span>Events</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-item-icon">👤</span>
+          <span>Profile</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-item-icon">⚡</span>
+          <span>Quests</span>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="log-out-btn">Log Out</button>
+        <div class="social-links">
+          <a href="#" class="social-link">🎵</a>
+          <a href="#" class="social-link">📘</a>
+          <a href="#" class="social-link">▶️</a>
+          <a href="#" class="social-link">📷</a>
+          <a href="#" class="social-link">💬</a>
+        </div>
+        <div class="sidebar-email">📧 itc.bilda@gmail.com</div>
+        <div style="text-align: center; font-size: 10px; color: #999; margin-top: 8px;">© 2025 Starly. All rights reserved.</div>
+      </div>
+    </aside>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-search">
+        <input type="text" placeholder="Search member...">
+      </div>
+      <div class="header-right">
+        <div class="user-badges">
+          <div class="badge-item">
+            <span class="badge-icon">🛡️</span>
+            <span>5</span>
+          </div>
+          <div class="badge-item">
+            <span class="badge-icon">🔥</span>
+            <span>5</span>
+          </div>
+          <div class="badge-item">
+            <span class="badge-icon">⚡</span>
+            <span>5</span>
+          </div>
+        </div>
+        <div class="user-menu">
+          <span class="user-name">bouzaghti malak</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Page Title -->
+      <h1 class="page-title">Overview Panel</h1>
+
+      <!-- Stats Grid -->
+      <div class="grid grid-4">
+        <div class="stat-card">
+          <div class="stat-icon yellow">👥</div>
+          <div class="stat-content">
+            <div class="stat-value">50</div>
+            <div class="stat-label">Members</div>
+          </div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon blue">📋</div>
+          <div class="stat-content">
+            <div class="stat-value">20</div>
+            <div class="stat-label">Playlists</div>
+          </div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon yellow">🏆</div>
+          <div class="stat-content">
+            <div class="stat-value">5</div>
+            <div class="stat-label">Rank</div>
+          </div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon purple">⭐</div>
+          <div class="stat-content">
+            <div class="stat-value">6</div>
+            <div class="stat-label">Active Tasks</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Points Chart -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Points Earned By Each Team This Month</h2>
+        </div>
+        <div class="chart-container" style="height: 300px;">
+          <canvas id="pointsChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Quick Actions</h2>
+        </div>
+        <div class="grid grid-4">
+          <button class="action-btn action-btn-blue">
+            <span style="font-size: 20px;">➕</span>
+            <span>Add Member</span>
+          </button>
+          <button class="action-btn action-btn-orange">
+            <span style="font-size: 20px;">📅</span>
+            <span>Add Event</span>
+          </button>
+          <button class="action-btn action-btn-pink">
+            <span style="font-size: 20px;">📤</span>
+            <span>Upload Report</span>
+          </button>
+          <button class="action-btn action-btn-purple">
+            <span style="font-size: 20px;">➕</span>
+            <span>Add Video</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Event Cards -->
+      <div class="grid grid-3">
+        <div class="event-card challenge">
+          <div class="event-card-header">Challenges</div>
+          <div class="event-card-meta">
+            <span>📅 Sep 12, 14:00</span>
+            <span>📍 Location</span>
+          </div>
+          <button class="event-card-btn">⊙ Details</button>
+        </div>
+
+        <div class="event-card workshop">
+          <div class="event-card-header">Workshops</div>
+          <div class="event-card-meta">
+            <span>📅 Sep 12, 14:00</span>
+            <span>📍 ITC Local</span>
+          </div>
+          <button class="event-card-btn">⊙ Details</button>
+        </div>
+
+        <div class="event-card challenge">
+          <div class="event-card-header">Challenges</div>
+          <div class="event-card-meta">
+            <span>📅 Sep 12, 14:00</span>
+            <span>📍 Location</span>
+          </div>
+          <button class="event-card-btn">⊙ Details</button>
+        </div>
+
+        <div class="event-card workshop">
+          <div class="event-card-header">Workshops</div>
+          <div class="event-card-meta">
+            <span>📅 Sep 12, 14:00</span>
+            <span>📍 ITC Local</span>
+          </div>
+          <button class="event-card-btn">⊙ Details</button>
+        </div>
+
+        <div class="event-card challenge">
+          <div class="event-card-header">Challenges</div>
+          <div class="event-card-meta">
+            <span>📅 Sep 12, 14:00</span>
+            <span>📍 Location</span>
+          </div>
+          <button class="event-card-btn">⊙ Details</button>
+        </div>
+
+        <div class="event-card workshop">
+          <div class="event-card-header">Workshops</div>
+          <div class="event-card-meta">
+            <span>📅 Sep 12, 14:00</span>
+            <span>📍 ITC Local</span>
+          </div>
+          <button class="event-card-btn">⊙ Details</button>
+        </div>
+
+        <div class="event-card workshop">
+          <div class="event-card-header">Workshops</div>
+          <div class="event-card-meta">
+            <span>📅 Sep 12, 14:00</span>
+            <span>📍 ITC Local</span>
+          </div>
+          <button class="event-card-btn">⊙ Details</button>
+        </div>
+
+        <div class="event-card challenge">
+          <div class="event-card-header">Challenges</div>
+          <div class="event-card-meta">
+            <span>📅 Sep 12, 14:00</span>
+            <span>📍 Location</span>
+          </div>
+          <button class="event-card-btn">⊙ Details</button>
+        </div>
+
+        <div class="event-card workshop">
+          <div class="event-card-header">Workshops</div>
+          <div class="event-card-meta">
+            <span>📅 Sep 12, 14:00</span>
+            <span>📍 ITC Local</span>
+          </div>
+          <button class="event-card-btn">⊙ Details</button>
+        </div>
+      </div>
+
+      <!-- Workshops History -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Workshops History</h2>
+          <button class="btn btn-outline">+ Add Event</button>
+        </div>
+        <div class="table-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Event Name</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Attends</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Event Name</td>
+                <td>Event Type</td>
+                <td>📅 Oct 22,2025</td>
+                <td>12</td>
+                <td><a href="#" class="action-link">View Details</a></td>
+              </tr>
+              <tr>
+                <td>Event Name</td>
+                <td>Event Type</td>
+                <td>📅 Oct 22,2025</td>
+                <td>12</td>
+                <td><a href="#" class="action-link">View Details</a></td>
+              </tr>
+              <tr>
+                <td>Event Name</td>
+                <td>Event Type</td>
+                <td>📅 Oct 22,2025</td>
+                <td>12</td>
+                <td><a href="#" class="action-link">View Details</a></td>
+              </tr>
+              <tr>
+                <td>Event Name</td>
+                <td>Event Type</td>
+                <td>📅 Oct 22,2025</td>
+                <td>12</td>
+                <td><a href="#" class="action-link">View Details</a></td>
+              </tr>
+              <tr>
+                <td>Event Name</td>
+                <td>Event Type</td>
+                <td>📅 Oct 22,2025</td>
+                <td>12</td>
+                <td><a href="#" class="action-link">View Details</a></td>
+              </tr>
+              <tr>
+                <td>Event Name</td>
+                <td>Event Type</td>
+                <td>📅 Oct 22,2025</td>
+                <td>12</td>
+                <td><a href="#" class="action-link">View Details</a></td>
+              </tr>
+              <tr>
+                <td>Event Name</td>
+                <td>Event Type</td>
+                <td>📅 Oct 22,2025</td>
+                <td>12</td>
+                <td><a href="#" class="action-link">View Details</a></td>
+              </tr>
+              <tr>
+                <td>Event Name</td>
+                <td>Event Type</td>
+                <td>📅 Oct 22,2025</td>
+                <td>12</td>
+                <td><a href="#" class="action-link">View Details</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+      <!-- User Profile Card -->
+      <div class="user-profile-card">
+        <div class="user-avatar-large">
+          <img src="https://via.placeholder.com/80" alt="User">
+          <span class="user-status"></span>
+        </div>
+        <div class="user-full-name">Bouzaghti Malak</div>
+        <div class="user-username">@bouzaghti.malak</div>
+        <div class="user-role">UI UX designer</div>
+        <div class="user-meta">
+          <span>📅 Joined September 2025</span>
+          <span>🎓 Computer Science</span>
+        </div>
+      </div>
+
+      <!-- Team Progress -->
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">Team Level Progress</h3>
+        <div class="progress-bar-wrapper">
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Management Hub -->
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">Management Hub</h3>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <button class="action-btn action-btn-blue" style="justify-content: flex-start;">
+            <span style="font-size: 18px;">👥</span>
+            <span>Manage Team</span>
+          </button>
+          <button class="action-btn action-btn-orange" style="justify-content: flex-start;">
+            <span style="font-size: 18px;">📅</span>
+            <span>Manage Events</span>
+          </button>
+          <button class="action-btn action-btn-pink" style="justify-content: flex-start;">
+            <span style="font-size: 18px;">📊</span>
+            <span>Manage Reports</span>
+          </button>
+          <button class="action-btn action-btn-purple" style="justify-content: flex-start;">
+            <span style="font-size: 18px;">📹</span>
+            <span>Manage Content</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
