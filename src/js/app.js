@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         labels: ['Team 1', 'Team 2', 'Team 3', 'Team 4', 'Team 5', 'Team 6', 'Team 7', 'Team 8', 'Team 9', 'Team 10', 'Team 11', 'Team 12'],
         datasets: [{
           label: 'ITC Referral',
-          data: [150, 180, 220, 240, 200, 190, 250, 280, 320, 350, 370, 400],
+          data: [150, 180, 220, 240, 200, 190, 250, 280, 320, 250, 270, 300],
           borderColor: '#FDB022',
           backgroundColor: 'rgba(253, 176, 34, 0.1)',
           fill: true,
